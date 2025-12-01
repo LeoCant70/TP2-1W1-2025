@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 14px;
+}
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    /*overflow: hidden;*/
+}
+
+/* format de base du texte*/
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    padding-left: 20px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 69, 0);
+}
+
+a:hover {
+    color: rgb(0, 100, 176);
+}
+
+/* format de base des pages*/
+body>div>section {
+    min-height: 100vh;
+}
+
+.pied__page {
+    min-height: 50vh;
+}
+
+/***************************************CENTRE DES PAGES*****************************************/
+/*centre de base*/
+.centre {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(255, 180, 180, 0.517);
+}
+
+/* centre de page d'accueil*/
+.centre__hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(250, 235, 215, 0.408);
+}
+
+/*centre de page d'inscription*/
+
+.centre__inscription {
+    max-width: 800px;
+
+    background-color: rgba(255, 244, 212, 0.408);
+    padding: 50px;
+}
+
+.centre__bas {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(90, 84, 250, 0.726);
+
+    ;
+}
+
+
+
+
+/****************************************************ACCUEIL (HERO PAGE)*****************************/
+
+/*structure generale*/
+.hero {
+    min-height: 100vh;
+    background-image: url("../images/hero.jpg");
+    border: 8px double white;
+    display: flex;
+}
+
+
+
+/*****titre principal***/
+.titre__hero {
+    font-size: 80px;
+    color: aliceblue;
+    font-family: "Pirata One", system-ui;
+    font-style: italic;
+    text-shadow: 2px 2px 12px #000000;
+    text-align: center;
+}
+
+/*** titre secondaire****/
+.sous__titre__hero {
+    font-size: 40px;
+    color: aliceblue;
+    font-style: italic;
+    text-shadow: 2px 2px 12px #000000;
+    text-align: center;
+}
+
+/* texte élaborateur*/
+.description {
+    padding: 20px;
+    margin-top: 155px;
+    text-align: center;
+    justify-content: space-around;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+/*information sur auteure*/
+.info p {
+    font-size: 10px;
+    padding-left: 20px;
+    color: aliceblue;
+}
+
+.info p:first-of-type {
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+/*aller vers page inscription*/
+.bouton__inscription {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+    outline: double 4px aliceblue;
+    background-color: rgba(240, 248, 255, 0.553);
+    padding: 30px;
+    font-size: 40px;
+    border-radius: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/********************************************PAGES DE CONTENU********************************************/
+body>div:nth-of-type(3) {
+    background-color: rgb(196, 223, 247);
+    ;
+}
+
+body>div:nth-of-type(4) {
+    background-color: rgb(121, 25, 255);
+}
+
+body>div:nth-of-type(5) {
+    background-color: rgb(89, 23, 255);
+}
+
+body>div:nth-of-type(6) {
+    background-color: rgb(77, 0, 184);
+}
+
+body>div:nth-of-type(7) {
+    background-color: rgb(0, 25, 47);
+}
+
+/********************************************TABLEAU********************************************/
+table {
+    border: 1px solid #505050;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: inset 10 10 10px #000000;
+
+}
+
+td,
+th {
+    border: 1px solid #505050;
+    padding: 5px;
+    font-size: 1rem;
+
+}
+
+th {
+    text-align: left;
+}
+
+thead {
+    background-color: rgb(255, 253, 133);
+}
+
+tbody {
+    background-color: rgb(255, 253, 160);
+}
+
+tfoot {
+    background-color: rgb(249, 255, 194);
+}
+
+caption {
+    font-size: 2rem;
+    font-weight: bold;
+    border: 1px solid rgb(61, 45, 136);
+    background-color: rgb(255, 253, 224);
+    font-family: "Pacifico", cursive;
+
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff7dbb5;
+}
+
+tbody tr:hover {
+    background-color: rgb(0, 0, 0);
+    color: seashell;
+}
+
+
+/********************************************PIED DE PAGE********************************************/
+.pied {
+    display: flex;
+    justify-content: space-between;
+    min-height: 50vh;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    padding: 35px;
+    padding-right: 65px;
+
+}
+
+
+
+
+
+.pied__section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 0;
+    color: blue;
+    padding: 5px;
+    background-color: rgba(240, 248, 255, 0.619);
+    border-radius: 10px;
+    min-width: 290px;
+
+}
+
+.pied__section p {
+
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.pied__section h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.sous_pied {
+    display: flex;
+    flex-direction: column;
+}
+
+.pied__section>h2,
+p {
+    color: black;
+}
+
+
+
+.pied__page>a {
+    text-align: center;
+    color: rgb(237, 234, 255);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 25px;
+
+}
+
+.pied__page>a:hover {
+    color: red;
+}
+
+.sociaux>img {
+
+    margin: 30px;
+
+}
+
+
+
+.sociaux {
+    display: flex;
+
+    margin-top: 90px;
+    border: double 5px white;
+    border-radius: 20px;
+
+
+}
