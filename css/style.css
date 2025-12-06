@@ -25,6 +25,7 @@ h3 {
 h1 {
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -40,10 +41,12 @@ a {
     text-align: center;
     text-decoration: none;
     color: rgb(0, 69, 0);
+
 }
 
 a:hover {
     color: rgb(0, 100, 176);
+
 }
 
 /* format de base des pages*/
@@ -183,9 +186,6 @@ body>div:nth-of-type(3) {
     ;
 }
 
-body>div:nth-of-type(4) {
-    background-color: rgb(121, 25, 255);
-}
 
 body>div:nth-of-type(5) {
     background-color: rgb(89, 23, 255);
@@ -251,6 +251,13 @@ tbody tr:hover {
 }
 
 
+
+
+
+
+
+
+
 /********************************************PIED DE PAGE********************************************/
 .pied {
     display: flex;
@@ -278,6 +285,7 @@ tbody tr:hover {
     background-color: rgba(240, 248, 255, 0.619);
     border-radius: 10px;
     min-width: 290px;
+
 
 }
 

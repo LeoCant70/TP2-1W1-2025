@@ -1,0 +1,131 @@
+/* toute la zone article (nommée rangée pour éviter répétition*/
+.rangée {
+    background-image: url('../images/image_articles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*lien acceuil spécifiquement pour cette zone*/
+.rangée a {
+    padding: 50px;
+}
+
+/*titre principal spécifiquement pour cette zone*/
+.rangée h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    text-shadow: 2px 2px 12px black;
+
+}
+
+
+/* **********************************ARTICLES **********************************/
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 20px;
+
+
+}
+
+/******************************zone contneu principal**************************/
+
+.centre__article {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(255, 244, 212, 0.408);
+    border: double 8px aliceblue;
+    border-top: none;
+    border-bottom: none;
+}
+
+/**********************************************composantes articles individuels*************/
+.article__div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 10px;
+    flex: 1 0 450px;
+    min-width: 300px;
+
+
+}
+
+
+
+
+.article__div:nth-child(even) .article__figure {
+    order: 1;
+}
+
+.article__div:nth-child(odd) .article__figure {
+    order: -1;
+}
+
+.article__texte {
+    padding: 10px;
+    flex: 1
+}
+
+
+
+
+.article__texte h2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-style: italic;
+    background-color: rgba(255, 96, 78, 0.901);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.article__texte p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    font-size: 10px;
+    padding-top: 0;
+    min-width: 100px;
+    text-align: justify;
+
+
+}
+
+/******************************************FIGURES***************************************/
+/*images*/
+
+.article__figure img {
+    max-width: 200px;
+    height: auto;
+    padding: 0;
+    transform: scale(0.8);
+    filter: blur(4px);
+    vertical-align: center;
+
+
+
+
+}
+
+.article__figure img:hover {
+    filter: blur(0px) saturate(4);
+    transform: scale(1);
+}
+
+/*figcapiton*/
+
+.article__figure figcaption {
+    text-align: center;
+    font-style: italic;
+    padding: 0;
+    border: double 4px white;
+}
