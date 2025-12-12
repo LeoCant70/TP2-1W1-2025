@@ -1,0 +1,44 @@
+.galerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.galerie__figure{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 300px;
+    transform: rotate(10deg);
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+    filter: grayscale(50) blur(6px);
+}
+
+
+
+.galerie__img{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.galerie__figcaption{}
+
+.galerie__figure:nth-of-type(odd){
+    transform: rotate(-10deg);
+}
+
+.galerie__figure:nth-of-type(odd):hover{
+    transform: rotate(-15deg) scale(1.05);
+   filter: hue-rotate(-100deg) contrast(150%); }
+
+.galerie__figure:nth-of-type(even){
+    transform: rotate(10deg);
+   
+}
+
+.galerie__figure:nth-of-type(even):hover{
+    transform: rotate(15deg) scale(1.05);
+  filter: hue-rotate(100deg); }

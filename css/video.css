@@ -1,0 +1,40 @@
+.video iframe {
+    display: inline-block;
+    
+    width: 300px;
+   margin: 10px;
+   border: double aliceblue 6px;
+    opacity: 70%;
+    gap: 20px;
+    
+    
+
+}
+
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+   
+    margin: 0 auto;
+  
+
+    
+    
+ 
+
+}
+
+.centre__video{
+    background-color: rgba(250, 235, 215, 0.462);
+     max-width: 1100px;
+     border: double 8px aliceblue;
+     border-top: none;
+     border-bottom: none;
+    margin: 0 auto;
+}
+
+.titre__video {
+    color: white;
+}

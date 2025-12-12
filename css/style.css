@@ -182,13 +182,17 @@ body>div>section {
 
 /********************************************PAGES DE CONTENU********************************************/
 body>div:nth-of-type(3) {
-    background-color: rgb(196, 223, 247);
-    ;
+    background-image: url('../images/tablette.jpg');
+    
 }
 
 
 body>div:nth-of-type(5) {
-    background-color: rgb(89, 23, 255);
+    background-image: url('../images/video.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: double 6px aliceblue;
 }
 
 body>div:nth-of-type(6) {
@@ -200,53 +204,74 @@ body>div:nth-of-type(7) {
 }
 
 /********************************************TABLEAU********************************************/
-table {
-    border: 1px solid #505050;
-    margin: 0 auto;
-    width: 80%;
-    box-shadow: inset 10 10 10px #000000;
-
+.tableau > h1{
+    color: white;
+    font-size: 55px;
 }
 
+table {
+     box-shadow: inset 10 10 10px #000000;
+   
+    margin: 0 auto;
+    width: 80%;
+   
+
+    
+ 
+  
+
+}
+tr, td,th{
+    font-size: clamp(0.2rem, 3vw, 2rem);
+}
 td,
 th {
     border: 1px solid #505050;
-    padding: 5px;
-    font-size: 1rem;
+  padding: 10px;
+   
+    border: double aliceblue 2px;
+    margin: 0 auto;
 
 }
 
 th {
-    text-align: left;
+   
 }
 
 thead {
-    background-color: rgb(255, 253, 133);
+    background-color: rgb(34, 73, 127);
+    color: rgb(0, 16, 71);
+    padding: 20px;
+   
 }
 
 tbody {
-    background-color: rgb(255, 253, 160);
+    background-color: rgba(133, 133, 133, 0.493);
+    
 }
 
 tfoot {
-    background-color: rgb(249, 255, 194);
+    background-color: rgba(66, 66, 66, 0.414);
 }
 
 caption {
     font-size: 2rem;
-    font-weight: bold;
-    border: 1px solid rgb(61, 45, 136);
-    background-color: rgb(255, 253, 224);
+    
+   border: 3px solid aliceblue;
+    background-color:rgba(95, 180, 255, 0.479);
     font-family: "Pacifico", cursive;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 0 auto;
 
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #fff7dbb5;
+    background-color:rgba(133, 133, 133, 0.469);
 }
 
 tbody tr:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(95, 180, 255, 0.479);
     color: seashell;
 }
 
