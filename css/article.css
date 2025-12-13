@@ -7,28 +7,12 @@
 
 }
 
-/*lien acceuil spécifiquement pour cette zone*/
-.rangée a {
-    padding: 50px;
-}
-
-/*titre principal spécifiquement pour cette zone*/
-.rangée h1 {
-    text-align: center;
-    color: aliceblue;
-    font-size: 50px;
-    text-shadow: 2px 2px 12px black;
-
-}
-
 
 /* **********************************ARTICLES **********************************/
 
 .article {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 50%;
-    margin: 0 auto;
     gap: 20px;
     padding: 20px;
 
@@ -49,17 +33,12 @@
 /**********************************************composantes articles individuels*************/
 .article__div {
     display: flex;
-    flex-direction: row;
-    gap: 0px;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 10px;
-    flex: 1 0 450px;
     min-width: 300px;
-
-
 }
-
-
 
 
 .article__div:nth-child(even) .article__figure {
@@ -72,48 +51,43 @@
 
 .article__texte {
     padding: 10px;
-    flex: 1
+    flex: 1 1 300px;
+    min-width: 300px;
 }
 
 
-
-
 .article__texte h2 {
-    display: flex;
-    flex-direction: column;
     padding: 10px;
     font-style: italic;
     background-color: rgba(255, 96, 78, 0.901);
     border-radius: 10px;
     text-align: center;
-
 }
 
 .article__texte p {
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px;
     font-size: 10px;
-    padding-top: 0;
     min-width: 100px;
-    text-align: justify;
-
-
 }
 
 /******************************************FIGURES***************************************/
-/*images*/
 
+/*image et figcaption*/
+.article__figure {
+    flex: 1 1 300px;
+}
+
+/*images*/
 .article__figure img {
-    max-width: 200px;
+    display: flex;
+    width: 100%;
     height: auto;
-    padding: 0;
     transform: scale(0.8);
     filter: blur(4px);
-    vertical-align: center;
-
-
-
-
+    align-items: center;
 }
 
 .article__figure img:hover {

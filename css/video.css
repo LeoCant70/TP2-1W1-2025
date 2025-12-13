@@ -4,7 +4,7 @@
     width: 300px;
    margin: 10px;
    border: double aliceblue 6px;
-    opacity: 70%;
+    opacity: 90%;
     gap: 20px;
     
     
@@ -15,8 +15,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-   
     margin: 0 auto;
   
 
@@ -37,4 +35,6 @@
 
 .titre__video {
     color: white;
+    text-align: center;
+    font-size: 2rem;
 }
