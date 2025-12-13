@@ -322,6 +322,7 @@ tbody tr:hover {
     border-radius: 10px;
     min-width: 290px;
     gap: 10px;
+    height: 300px;
 
 
 }
@@ -386,4 +387,8 @@ p {
     border-radius: 20px;
 
 
+}
+
+.avis{
+    color: rgb(0, 42, 255);
 }
